@@ -58,10 +58,10 @@ resource "azurerm_linux_virtual_machine" "mtc-vm" {
   admin_username        = "adminuser"
   network_interface_ids = [azurerm_network_interface.mtc-interface.id]
 
-  admin_ssh_key {
-    username = "adminuser"
-    public_key = file("~/.ssh/id_rsa.pub")
-  }
+  # admin_ssh_key {
+  #   username = "adminuser"
+  #   public_key = file("~/.ssh/id_rsa.pub")
+  # }
 
   os_disk {
     caching              = "ReadWrite"
