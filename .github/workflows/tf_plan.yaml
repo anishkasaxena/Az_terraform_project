@@ -25,8 +25,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        # working-directory: ${{ inputs.path }}
-        
+          
     steps:
       - name: Checkout
         uses: actions/checkout@v3.1.0
